@@ -25,6 +25,7 @@
             ctx.lineTo(end - 5, 80 * i);
             ctx.lineWidth = 8;
             ctx.lineCap = 'round';
+            ctx.fillText("("+plotPoint.start+"-"+plotPoint.end+")", end-95, 80*i-10);
             ctx.strokeStyle = getColor();
             ctx.stroke();
         }
