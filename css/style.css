@@ -1,0 +1,16 @@
+body{
+    background: #000;
+}
+#mycanvas{
+    background: #333;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
