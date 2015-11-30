@@ -1,65 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Timesheet Chart</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="js/sheet.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/timesheet.js"></script>
     </head>
     <body>
-        <div class="container">
-            <h2>Timesheet Chart</h2>
-            <div class="chart-container">
-                <canvas id="mycanvas" width="700" height="500"></canvas>
+        <div class="box">
+            <h1>Timesheet Chart</h1>
+            <div id="timesheet-default" class="timesheet">
+                <div class="scale"></div>
+                <ul class="data"></ul>
             </div>
         </div>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                var ctx = $('#mycanvas').get(0).getContext("2d");
-                console.log(ctx);
-                var data = {
-                    labelx: ["2001", "2002", "2003", "2004", "2005", "2006", "2007"],
-                    labely: ['javascript', 'css', 'git'],
-                    dataset: {
-                        year1:
-                                {
-                                    start: 2001,
-                                    end: 2001
-                                },
-                        year2:
-                                {
-                                    start: 2001,
-                                    end: 2002,
-                                },
-                        year3:
-                                {
-                                    start: 2001,
-                                    end: 2003
-                                },
-                        year4:
-                                {
-                                    start: 2001,
-                                    end: 2004
-                                },
-                        year5:
-                                {
-                                    start: 2001,
-                                    end: 2005
-                                },
-                        year6:
-                                {
-                                    start: 2001,
-                                    end: 2006
-                                },
-                    }
-
-                };
-
-                $('#mycanvas').timeSheet(ctx, data);
-            });
-        </script>
     </body>
 </html>
